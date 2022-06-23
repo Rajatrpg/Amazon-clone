@@ -2,7 +2,7 @@ import React from 'react'
 import './Product.css'
 import { useStateValue } from './StateProvider'
 
-export default function ProductCart({ id, title, price, rating, image }) {
+export default function CheckoutProduct({ id, title, price, rating, image }) {
     const [{ basket }, dispatch] = useStateValue();
     const removeItem = () => {
         //Remove from basket...
